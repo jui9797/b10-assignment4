@@ -54,3 +54,24 @@ function calculateFinalScore(obj) {
    }
    return false;
 }
+
+function  waitingTime(waitingTimes  , serialNumber) {
+
+    if(!Array.isArray(waitingTimes) || typeof serialNumber !== 'number'){
+     return 'Invalid Input';
+    }
+    
+ 
+    let sum =0;
+    for(let num of waitingTimes){
+     sum +=num;
+    } 
+    let avg =Math.round(sum / waitingTimes.length);
+ 
+ 
+    let remain =(serialNumber-1) - waitingTimes.length;
+ 
+ 
+    let finalSerial =avg * remain;
+    return finalSerial;
+ }
