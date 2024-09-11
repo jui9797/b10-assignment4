@@ -37,3 +37,20 @@ function checkDigitsInName(name){
     return false;
     
 }
+
+function calculateFinalScore(obj) {
+
+    if(typeof obj !== 'object'){
+        return 'Invalid Input';
+    }
+
+   let score =obj.testScore + obj.schoolGrade;
+   if(obj.isFFamily){
+    score =(obj.testScore + obj.schoolGrade) + 20;
+   }
+
+   if(score >= 80 && obj.testScore <= 50 && obj.schoolGrade <= 30){
+    return true;
+   }
+   return false;
+}

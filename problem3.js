@@ -42,12 +42,16 @@ function checkDigitsInName(name){
 }
 const test1 =checkDigitsInName('Raj123');
 console.log(test1);
-const test2 =checkDigitsInName('Shuvo1'); 
+const test2 =checkDigitsInName('n9ayeem'); 
 console.log(test2);
-const test3 =checkDigitsInName('Name2024');
+const test3 =checkDigitsInName('e1mu3');
 console.log(test3);
-const test4 =checkDigitsInName('!@#');
+const test4 =checkDigitsInName('Suman');
 console.log(test4);
-const test5 =checkDigitsInName(["Raj"]);
+const test5 =checkDigitsInName('Name2024');
 console.log(test5);
+const test6 =checkDigitsInName('!@#');
+console.log(test6);
+const test7 =checkDigitsInName(["Raj"]);
+console.log(test7);
 
